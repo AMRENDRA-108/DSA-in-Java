@@ -10,6 +10,7 @@ class Solution {
             x /= 10;
         }
 
+        // here if num == rev then num is palindrome and it returns true
         return num == rev;
     }
 }
