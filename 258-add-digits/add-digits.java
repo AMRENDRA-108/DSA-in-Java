@@ -4,10 +4,11 @@ class Solution {
        while(num >= 10){
 
         int sum = 0;
+        int digit = 0;
 
         while(num > 0){
-
-            sum = sum + num % 10;
+            digit = num % 10;
+            sum  += digit;
             num /= 10;
         }
         num = sum;
