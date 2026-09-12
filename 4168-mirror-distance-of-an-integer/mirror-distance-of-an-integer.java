@@ -4,7 +4,7 @@ class Solution {
         int rev = 0;
         int num = n;
         
-
+  // mirror differrence
         while(n > 0){
             int digit = n % 10;
             rev = 10*rev + digit;
