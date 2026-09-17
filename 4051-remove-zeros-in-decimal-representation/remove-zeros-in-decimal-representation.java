@@ -2,7 +2,7 @@ class Solution {
     public long removeZeros(long n) {
         
         long rev = 0;
-
+        
         while(n > 0){
 
             long digit = n % 10;
