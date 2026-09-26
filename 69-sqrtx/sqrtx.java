@@ -1,13 +1,47 @@
 class Solution {
     public int mySqrt(int x) {
-       if(x <= 1)
-          return x;
 
-          int i = 1;
-          while(i <= x/i){
-            i++;
-          }
 
-          return i-1;
+      if(x <= 1)
+         return x;
+
+         int low = 1, high = x /2;
+
+         while(low <= high){
+            long mid = low + (high - low)/2;
+
+            if(mid * mid == x){
+                return (int)mid;
+            }
+
+            else if(mid*mid > x){
+                high = (int)mid - 1;
+            }
+            else{
+                low = (int)mid + 1;
+            }
+         }
+
+         return high;
+
+
+
+
+
+
+
+
+
+
+
+    //    if(x <= 1)
+    //       return x;
+
+    //       int i = 1;
+    //       while(i <= x/i){
+    //         i++;
+    //       }
+
+    //       return i-1;
     }
 }
